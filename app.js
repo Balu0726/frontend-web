@@ -57,7 +57,6 @@ function renderAuth(mode) {
         ${signup ? '<label>I am a<select name="role"><option value="buyer">Buyer</option><option value="farmer">Seller / Farmer</option></select></label>' : ''}
         <button class="btn" type="submit">${signup ? 'Create account' : 'Continue to dashboard'} <span>→</span></button>
       </form>
-      ${!signup ? '<div class="demo-note">Admin login: <strong>balu172609@gmail.com</strong> / 00000</div>' : ''}
       <div class="auth-switch">${signup ? 'Already have an account?' : 'New to HarvestLink?'} <button class="link-btn" id="auth-switch">${signup ? 'Sign in' : 'Create an account'}</button>${!adminLogin ? '<span style="margin:0 7px;color:var(--line)">|</span><button class="link-btn" id="admin-login">Admin login</button>' : ''}</div>
     </div></section>
   </main>`;
